@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Moment from 'react-moment';
 import Table from './Table';
-import Form from './Form';
 import { CSVLink, CSVDownload } from "react-csv";
 
 class App extends Component {
@@ -41,7 +41,7 @@ class App extends Component {
         
         return (
             <div className="container">
-                <h1>Psh Exam</h1>
+                <h1>Psh Exam, Updated at: <Moment>{Date.now()}</Moment> </h1>
                 <p>Top 10 players</p>
                 <Table
                     players={players}
