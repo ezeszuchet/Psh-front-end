@@ -6,6 +6,7 @@ const TableHeader = () => {
             <tr>
                 <th>Image</th>
                 <th>Name</th>
+                <th>Last stat created</th>
             </tr>
         </thead>
     );
@@ -17,6 +18,7 @@ const TableBody = props => {
             <tr key={index}>
                 <td><img src={row.profileImage} alt=""/></td>
                 <td>{row.username}</td>
+                <td>{row.creation}</td>
             </tr>
         );
     });

@@ -36,11 +36,6 @@ class App extends Component {
         clearInterval(this.state.interval);
     }
 
-    /*handleSubmit = character => {
-        this.setState({ characters: [...this.state.characters, character] });
-        //TODO handleExport
-    }*/
-
     render() {
         const { players } = this.state;
         
@@ -51,8 +46,9 @@ class App extends Component {
                 <Table
                     players={players}
                 />
-                <CSVLink data={players}>Export report to csv</CSVLink>;
-                {/* <Form handleSubmit={this.handleSubmit} /> */}
+                <div style={{ margin: "10px" }}>
+                    <CSVLink data={players}>Export report to csv</CSVLink>
+                </div>
             </div>
         );
     }
