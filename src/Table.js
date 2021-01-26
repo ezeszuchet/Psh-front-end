@@ -20,7 +20,7 @@ const TableBody = props => {
             <tr key={index}>
                 <td><img src={row.profileImage} alt=""/></td>
                 <td>{row.username}</td>
-                <td>{row.score}</td>
+                <td>{row.MaxScore}</td>
                 <td><Moment>{row.creation}</Moment></td>
             </tr>
         );
