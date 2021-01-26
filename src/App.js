@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
 import Table from './Table';
-import { CSVLink, CSVDownload } from "react-csv";
+import { CSVLink } from "react-csv";
 
 class App extends Component {
     state = {
@@ -46,7 +46,7 @@ class App extends Component {
                 <Table
                     players={players}
                 />
-                <div style={{ margin: "10px" }}>
+                <div className="csv">
                     <CSVLink data={players}>Export report to csv</CSVLink>
                 </div>
             </div>

@@ -661,6 +661,9 @@ caption {
   .contain-table {
     width: 100%; } }
 
+.csv{
+  margin: 1rem;
+}
 /* Navigation
   =============== */
 /* Layout

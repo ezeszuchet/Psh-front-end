@@ -18,7 +18,7 @@ const TableBody = props => {
     const rows = props.players.map((row, index) => {
         return (
             <tr key={index}>
-                <td><img src={row.profileImage} alt=""/></td>
+                <td><img src={row.profileImage} alt="profileImage"/></td>
                 <td>{row.username}</td>
                 <td>{row.MaxScore}</td>
                 <td><Moment>{row.creation}</Moment></td>
